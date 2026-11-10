@@ -3,6 +3,7 @@
 # Programming Assignment 5 
 
 
+from flask import Flask
 from flask import request, render_template_string
 from flask_bcrypt import Bcrypt
 import re 
