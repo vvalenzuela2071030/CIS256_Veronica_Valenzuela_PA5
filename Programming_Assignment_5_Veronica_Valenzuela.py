@@ -19,7 +19,7 @@ def register_form():
     form_html = """
     <h2>Programming Assignment 5</h2>
     
-    <form method="POST" action"/register">
+    <form method="POST" action="/register">
     
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname"
@@ -41,7 +41,7 @@ def register_form():
             name="confirm" required> 
         <br><br>
         
-        <input tupe="submit" value="Register">
+        <input type="submit" value="Register">
     </form>
     """
     
