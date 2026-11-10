@@ -27,7 +27,7 @@ def register_form():
         <br><br>
         
         <label for="username">Username:</label> 
-        <input type="text" id="username" name"username" 
+        <input type="text" id="username" name="username" 
             name="" required> 
         <br><br>
             
@@ -85,14 +85,14 @@ def register():
     ).decode("utf-8")
     
         
-    return (
-        f"Registration Successfull!" <br>
-        f"Full Name: {fullname}" <br>
-        f"Username: {username}" <br>
-        f"Password: {password}" <br>
-        f"Confirm Password: {confirm}"
-    )
-
+    return f"""
+        <h2>Registration Successfull!</h2> 
+        <p>Full Name: {fullname}</p>
+        <p>Username: {username}</p> 
+        <p>Password: {password}</p> 
+        <p>Confirm Password: {confirm}</p>
+    """
+    
 
 if __name__ == "__main__": 
     app.run(debug=True, port="5050")
